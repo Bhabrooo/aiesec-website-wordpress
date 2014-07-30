@@ -1,0 +1,486 @@
+/* 
+
+Xolve Website
+Custom Stylesheet
+Author: Eyana Mallari
+Date: April 2014
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body{ 
+    background: #f0f6fa;
+	margin: 0;
+	padding: 0;
+
+
+}
+
+/* Global Styles
+-----------------------------------------------------*/
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1em; 
+    line-height: 1.5em;
+    font-weight: 300;
+    vertical-align: middle;
+}
+
+span{
+    font-size: 1.2em;
+}
+
+strong{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.05em; 
+    line-height: 1.5em;
+    font-weight: 700;
+    color: #007fc6;
+}
+.blue{
+    color: #007fc6;
+}
+
+.cta-btn {
+    margin-top: 30px;
+    margin-left: auto;
+     margin-right: auto;
+    font-size: 0.655em;
+    color: #007fc6;
+    border: 1px solid #007fc6;
+    border-radius: 13px;
+    padding: 13px 40px 13px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-transition: background-color .3s ease-in-out;
+    -moz-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+
+
+.center{
+	margin: 0 auto;
+}
+
+.desc{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: 300;
+    color: rgba(40,40,40,0.9);
+}
+
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700; 
+}
+
+.img-smaller-80{
+    width: 80%;
+    height: auto;
+}
+
+.img-smaller-70{
+    width: 69%;
+    height: auto;
+}
+
+.invert{
+    color: #fff;
+}
+
+.invert-btn{
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+.opacity-light{
+    opacity: 0.6;
+}
+
+
+.space-down{
+    margin-bottom: 30px;
+}
+
+.space-up{
+    margin-top: 30px;
+}
+
+
+.subheading{
+    text-align: center;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.blue{
+    color: #007fc6;
+}
+
+
+
+
+/* Call to action Button */
+
+
+
+
+
+
+/* Navigation bar
+----------------------------------------------------------------------*/
+a.nav-main {
+    color: #2a4452;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    border-radius: 13px;
+}
+
+.nav-main.active {
+    -webkit-transition: all .3s
+    -moz-transition: all .3s;
+    transition: all .3s;
+    color: #fff;
+}
+
+.navbar-brand{
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+#start-list.a {
+    color: #616161;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    border-radius: 13px;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.navbar {
+   padding: 10px 0;
+    text-transform: uppercase;
+  	font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+.navbar-custom .nav li a{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.navbar-custom .nav li:hover:not(.start),
+.navbar-custom .nav li:focus:not(.start),
+.navbar-custom .nav li a:hover:not(#start-list),
+.navbar-custom .nav li a:focus:not(#start-list) {
+    outline: 0;
+    background-color: #007fc6;
+    color: #fff;
+    border-radius: 13px;
+}
+
+.navbar-custom .nav li.active {
+    background-color: #007fc6;
+    color: #fff;
+    border-radius: 13px;
+}
+
+#start-item.start > a{
+    color: #3db862;
+    border:3px solid #3db862;
+    border-radius: 13px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+}
+
+#start-item.start > a:hover{
+   background-color: #3db862;
+   color:#fff;}
+
+
+.navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    outline: 0;
+}
+
+.index-img-header{
+    display: none;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.navbar-fixed-top{
+       -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 1em 0 1em 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease, padding .5s ease;
+        -moz-transition: background .5s ease, padding .5s ease;
+        transition: background .5s ease, padding .5s ease;
+    }
+
+    .top-nav-collapse {
+        padding-top: 0.53em;
+        padding-bottom: 1em;
+        margin: 0 auto;
+        background-color: #fff;
+
+    }
+
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+}
+
+.page-item {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+
+/* Hero
+-----------------------------------------------------*/
+#hero {
+	background: url(../_images/hero-imagebg.png);
+	background-size: cover;
+	background-position: center center;
+	min-height: 400px;
+	padding: 0;
+	margin: 0 auto; 
+	position: relative;		
+}
+
+.hero-xolve-logo{
+	margin: 0 auto;
+}
+
+.welcome {
+    font-size: 1.813em;
+    color: #616161;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* Services
+-----------------------------------------------------*/
+#services{
+	background: #f0f6fa;
+	min-height: 400px;
+
+}
+
+
+
+/* Prices
+-----------------------------------------------------*/
+#prices{
+	background: #007ec5;
+	min-height: 400px;
+}
+
+/* Contact
+-----------------------------------------------------*/
+#contact{
+    background: #007ec5;
+    padding: 20px 0 20px 0;
+    padding-top: 20px;
+    min-height: 250px;
+}
+
+.call-to-action {
+    font-size: 1.813em;
+    color: #616161;
+    text-align: center;
+}
+
+/* Footer
+-----------------------------------------------------*/
+
+footer{
+	background: #2a4452;
+	color: #fff;
+    padding: 5px 0;
+    opacity: 0.9;
+    text-transform: uppercase;
+    line-height: 1em;
+    z-index: 999;
+    position: relative;
+    bottom: 0;
+}
+
+.ftr{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.copyright{
+    font-weight: 700;
+    opacity: 1;
+    border-right: 1px solid rgba(255,255,255,0.5);
+   /* width: 10em;*/
+    padding: 8px 16px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.get-in-touch{
+    /*width: 10em;*/
+    padding: 8px 16px 0px 16px;
+        -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+#label{
+    opacity: 0.7;
+    font-weight: 700;
+    line-height: 1em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.details{
+    /*width: 32em;*/
+    padding: 8px 16px;
+    text-transform: lowercase;
+        -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.footer-right{
+     padding: 8px 16px; 
+         -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;  
+}
+
+.social-media{
+     text-align: right;
+
+}
+
+
+
+/* About
+-----------------------------------------------------*/
+
+
+#about-1{
+    background: url(../_images/hero-about.png);
+    background-size: cover;
+    background-position: center center;
+    min-height: 450px;
+    padding: 0;
+    margin: 0 auto; 
+  
+}
+
+.about-welcome{
+    top: 18em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+@media (max-width: 767px){
+    .about-welcome{
+        top: 5em;
+    }
+    .about-heading{
+        font-size: 1.5em;
+    }
+}
+
+
+#skillset{
+    background: #f0f6fa;
+    min-height: 400px;
+
+}
+
+#contact-invert{
+    background: #f0f6fa;
+    padding: 20px 0 20px 0;
+    padding-top: 20px;
+    min-height: 250px;
+}
+
+
+.about-heading{
+    text-align: right;
+    font-size: 3em;
+    opacity: 0.8;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.about-right{
+    padding-top: 3em;
+}
+.blue-border{
+   height: 165px;
+   margin-left: 20px;
+    border-left: 2px solid #007fc6;
+      -moz-transform: rotate(20deg);  
+       -o-transform: rotate(20deg);  
+  -webkit-transform: rotate(20deg);  
+      -ms-transform: rotate(20deg);  
+          transform: rotate(20deg); 
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s; 
+}
+
+.chart-box{
+    min-width: 310px; 
+    height: 400px; 
+    margin: 0 auto;
+}
+
+
+
+
+/* Media Queries
+-----------------------------------------------------*/

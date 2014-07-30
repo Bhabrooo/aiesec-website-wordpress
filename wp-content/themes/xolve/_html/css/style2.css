@@ -1,0 +1,285 @@
+/* 
+
+Xolve Website
+Custom Stylesheet
+Author: Francis Bautista
+Date: April 2014
+
+*/
+
+/*
+*	Colors:
+		Gray: #616161
+        Blue: 
+        Green: #3db862
+        Dark Blue: #2a4452
+        Light Blue: #f0f6fa
+*/
+
+
+
+
+/* Intro
+----------------------------------------------------------------------*/
+
+#intro-folio{
+    background: url(../_images/portfolio.png) no-repeat bottom center scroll;
+    text-align: center;
+    min-height: 400px;
+    color: #616161;   
+    background-size: cover; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    z-index: 2;
+}
+
+#intro-contact{
+    background: url(../_images/contact.png) no-repeat bottom center scroll;
+    text-align: center;
+    min-height: 400px;
+    color: #616161;   
+    background-size: cover; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro-text {
+    font-size: 18px;
+}
+
+.intro-query {
+    font-size: 35px;
+    color: #007fc6;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#intro-container.container {
+    margin-top: -10%;
+}
+
+@media(min-width:767px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .brand-heading {
+        font-size: 100px;
+        color: #616161;
+        font-weight: bold;
+    }
+
+    .intro-text {
+        font-size: 35px;
+        color: #616161;
+    }
+
+    .intro-query {
+    	font-size: 35px;
+        color: #007fc6;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+.brand-heading {
+    font-size: 40px;
+}
+
+.contact-heading {
+    font-size: 40px;
+    padding-top: 20%;
+    font-weight: bold;
+    width: 100%;
+}
+
+.folio-link {
+    margin-top: 30px;
+    font-size: 40px;    
+    font-weight: bold;
+}
+
+
+
+/* Portfolio Container
+----------------------------------------------------------------------*/
+/*#portfolio{
+      text-align: center;
+    color: #616161;   
+    background: #f0f6fa;
+
+}*/
+.overlay {
+   margin-top: -13%;
+    position: relative;
+    z-index: 3;
+}
+
+.folio-content {
+    margin-top: 2%;
+    padding-top: 5%;
+    height: 100%;
+
+}
+
+#folio-header {
+    color:#616161;
+    padding-top: 5%;
+}
+
+#folio-header:hover {
+    color:#a0a0a0;
+    text-decoration: none;
+}
+
+/* Card Container
+----------------------------------------------------------------------*/
+
+.card {
+    margin-bottom: 3%;
+    border-radius: 13px;
+    background-color: #fff;
+    color: #000;
+    height: 30em;
+    width: 100%;
+    position: relative;
+    z-index: 4;
+}
+
+.title {
+    color: #007fc6;
+}
+
+.desc-area {
+    padding-top: 10%;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+p.desc-text {
+    font-size: 1.5em;
+    padding: 2% 10% 2% 10%;
+    height: 160px;
+}
+
+button.btn-site {
+    border-radius: 13px;
+    background-color: #f0f6fa;
+    height: 80px;
+    width: 100%;
+    color: #007fc6;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.img-responsive {
+    padding-top: 7%;
+    margin: auto;
+    vertical-align: middle
+}
+
+#project.desc-area {
+    padding-top: 15%;
+}
+
+img.img-button {
+    position: relative;
+    z-index: 5;
+    margin-left: 190px;
+    margin-bottom: -430px;
+}
+
+/* Contact Form Area
+----------------------------------------------------------------------*/
+.btn-row, .form-row {
+    height: 4.7em;
+}
+
+.center-space {
+    margin-top: 1%;
+}
+.contact-form {
+    background-color: #f0f6fa;
+    height: 1400px;
+}
+
+.drop-form {
+    text-align: center;
+    font-size: 1.4em;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#form-box {
+    margin-top: 5%;
+}
+
+.form-container {
+
+}
+
+.form-control {
+    font-size: 1.9em;
+    height: 1.9em;
+    border-radius: 10px;
+    border-color: #616161;
+    background-color: transparent;
+}
+
+.form-12 {
+    margin-top: 4%;
+}
+
+.form-port {    
+    height: 1400px;
+}
+
+.form-label {
+    color: #616161;
+    font-size: 1.4em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+option:first {
+    color: #f0f6fa;
+}
+#quick-message, #kick-start {
+    width: 100%;
+    border-radius: 10px;
+    height: 90%;
+    font-size: 1.4em;
+}
+
+#quick-message {
+    border-color: #007fc6;
+    color: #007fc6;
+    background-color: transparent;
+}
+
+.transparent {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.submit-request {
+    margin-top: 5%;
+    vertical-align: center;
+    padding: 1% 2% 1% 2%;
+    font-size: 1.4em;
+    border-radius: 13px;
+}
+
+.wrapper {
+    text-align: center;
+}
