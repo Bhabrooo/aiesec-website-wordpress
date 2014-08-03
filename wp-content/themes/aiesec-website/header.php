@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package Xolve Base Theme
+ * @package Foxtart Base Theme
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -24,37 +24,40 @@
 <?php wp_head(); ?>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom"<?php body_class(); ?>>
-<div id="body-wrap">
-	<nav class="navbar navbar-custom navbar-fixed-top index" role="navigation">
-  		<div class="container">
-  			<div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+<body id="page-top" class="index">
 
-              <?php $image = get_field('header_logo', 'option');
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <?php $image = get_field('header_logo', 'option');
 
-              if ( $image ):
+              	if ( $image ):
 
-              ?>
-              <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img src="<?php the_field('header_logo', 'option'); ?>" class="index-img-header img-responsive"></a>
-          	<?php endif; ?>
+              	?>
+              	
+              	<a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img src="<?php the_field('header_logo', 'option'); ?>" class="index-img-header img-responsive"></a>
+          	
+          		<?php endif; ?>
+            </div>
 
-          </div>
-    		<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-	          <ul class="nav navbar-nav" >
-				 <?php
+			<?php
 
 					$defaults = array(
 						'theme_location'  => '',
 						'menu'            => 'primary',
-						'container'       => '',
-						'container_class' => '',
-						'container_id'    => '',
-						'menu_class'      => 'menu',
+						'container'       => 'div',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'bs-example-navbar-collapse-1',
+						'menu_class'      => 'nav navbar-nav navbar-right',
 						'menu_id'         => '',
 						'echo'            => true,
 						'fallback_cb'     => 'wp_page_menu',
@@ -62,16 +65,14 @@
 						'after'           => '',
 						'link_before'     => '',
 						'link_after'      => '',
-						'items_wrap'      => '%3$s',
+						'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 						'depth'           => 0,
 						'walker'          => ''
 					);
 
-				wp_nav_menu( $defaults ); ?>
-	          </ul>
-    		</div>
-        <!-- /.navbar-collapse -->
-  		</div>
-	</nav>
-
+			wp_nav_menu( $defaults ); ?>
+                
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 	<?php do_action( 'before' ); ?>

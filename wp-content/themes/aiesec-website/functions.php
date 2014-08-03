@@ -156,3 +156,26 @@ function my_acf_options_page_settings( $settings )
 add_filter('acf/options_page/settings', 'my_acf_options_page_settings');
 
 
+function hello_menu() {
+
+	 wp_nav_menu( array(
+        'theme_location'  => '',
+						'menu'            => 'primary',
+						'container'       => '',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'bs-example-navbar-collapse-1',
+						'menu_class'      => 'nav navbar-nav navbar-right',
+						'menu_id'         => '',
+						'echo'            => true,
+						'before'          => '',
+						'after'           => '',
+						'link_before'     => '',
+						'link_after'      => '',
+						'items_wrap'      => '%3$s',
+						'depth'           => 0,
+						'walker'          => ''
+    ) );
+
+		
+
+}
