@@ -38,24 +38,16 @@
                     <span class="icon-bar"></span>
                 </button>
                 
-                <?php $image = get_field('header_logo', 'option');
+  
 
-              	if ( $image ):
+          	<a class="navbar-brand" href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo('name'); ?> </a>
 
-              	?>
-              	
-              	<a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img src="<?php the_field('header_logo', 'option'); ?>" class="index-img-header img-responsive"></a>
           		
-          		<?php else: ?>
-
-          			<a class="navbar-brand" href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo('name');?> </a>
-
-          		<?php endif; ?>
             </div>
 
 			<?php
 
-					$defaults = array(
+				$defaults = array(
 						'theme_location'  => '',
 						'menu'            => 'primary',
 						'container'       => 'div',
@@ -74,7 +66,9 @@
 						'walker'          => ''
 					);
 
-			wp_nav_menu( $defaults ); ?>
+				wp_nav_menu( $defaults ); 
+
+			?>
                 
         </div>
         <!-- /.container-fluid -->

@@ -6,98 +6,187 @@
  */
 
 get_header(); ?>
+ 
+
+    <!-- Header -->
+    <header data-autoheight="true">
+    <!--style="background: url('img/forest.jpg') center center"-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="intro-text">
+                        <span class="name">Mabuhay!</span>
+                        <span class="skills">We are the Philippine branch of AIESEC, the world's biggest youth organization</span><br>
+                        <button class="btn btn-lg btn-outline" id="header-cta">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
-<section id="hero" class="row" data-autoheight="true" style="background-image: url(<?php the_field('hero-background'); ?>);
-	">
 
-<div class="col-sm-12">
-	<div class="vspacer2"></div>
+    <!-- Student Grid Section -->
+    <section id="about" class="yellow">
+        <div class="container">
+            <div class="row">
 
-	<img src="<?php the_field('hero-logo'); ?>" class="img-responsive hero-xolve-logo">
-	<div class="col-sm-12 welcome">
-		<div class="col-sm-10 col-sm-offset-1">
-			<?php the_field('hero-main_text'); ?>
-		</div>
+                <div class="col-sm-12 text-center heading">
+                    <h2>Who we are</h2>
+                    <span class="subheading">
+                       <a href="about.html" class="sub-button">Get to Know More About Us</a> 
+                    </span>
+                    
+                </div>
 
-		<?php if( get_field('hero-call_to_action-link') && get_field('hero-call_to_action-link') != 'null' ) : ?>
-		<a href="<?php the_field('hero-call_to_action-link'); ?>" class="btn cta-btn"><?php the_field('hero-call_to_action-text'); ?></a>
-		<?php endif; ?>
+                <div class="col-sm-4 text-center">
+                    <i class="fa fa-jsfiddle fa-5x"></i>
+                    <h3>Youth Org</h3>
+                    <p>Hey AIESEC! All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
+                </div><!--col-->
 
-	</div>
-</div>
+                <div class="col-sm-4 text-center">
+                    <i class="fa fa-rebel fa-5x"></i>
+                    <h3>Filipino</h3>
+                    <p>Hey AIESEC! All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
+                </div><!--col-->
 
-</section><!--end hero-->
+                <div class="col-sm-4 text-center">
+                    <i class="fa fa-university fa-5x"></i>
+                    <h3>First-choice Partner</h3>
+                    <p>Hey AIESEC! All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
 
-<?php if( have_rows('home-services_list') ): ?>
-<section id="services" class="container-fluid" data-autoheight="true">
-	<div class="container">
-		<div class="col-sm-10 col-sm-offset-1">
-			<div class="vspacer3"></div>
-			<h2 class="heading space-down">Services</h2>
+                </div><!--col-->
 
-			<?php while ( have_rows('home-services_list') ) : the_row(); ?>
-			<div class="col-sm-4 desc">
-				<img src="<?php the_sub_field('service-image'); ?>" class="img-responsive center ">
-				<h3 class="heading"><?php the_sub_field('service-label'); ?></h3>
-				<p class="desc space-up"><?php the_sub_field('service-description'); ?>
-				</p>
-			</div><!--end col-sm-4-->
-			<?php endwhile; ?>
-
-			<div class="col-sm-12"><center>
-			<?php if( get_field('services_cta_link') != 'null' ) : ?>
-				<a href="<?php the_field('services_cta_link'); ?>" class="btn cta-btn" style="font-size: 1em;"><?php the_field('services_cta'); ?></a>
-			<?php endif; ?></center>
-			</div>
-
-	
-		</div>
-
-		
-	</div> <!--end container-->
-</section><!--end services-->
-<?php endif; ?>
-
-<?php if( have_rows('home-prices_list') ): ?>
-<section id="prices" class="container-fluid" data-autoheight="false">
-<div class="container">
-		<div class="col-sm-10 col-sm-offset-1">
-			<div class="vspacer3"></div>
-			<h2 class="heading invert" style="margin-bottom: 0;">Products</h2>
-			<h3 class="subheading invert space-down" style="margin-top: 10px;">
-				<?php the_field('home-prices_tagline'); ?> </h3>
-			<?php if( get_field('home-price_bar') ): ?>
-				<div class="hidden-xs">
-				<img src="<?php the_field('home-price_bar'); ?>" class="img-responsive center img-smaller-70" style="margin-bottom: 10px;">
-				</div>
-			<?php endif; ?>
-
-			<?php while ( have_rows('home-prices_list') ) : the_row(); ?>
-				<div class="col-sm-4" style="margin-bottom: 1em;">
-					<img src="<?php the_sub_field('product-price'); ?>" class="img-responsive center img-smaller-80">		
-				</div><!--end col-sm-4-->
-			<?php endwhile; ?>
-
-		</div>
-	</div> <!--end container-->
-</section><!--end prices-->
-<?php endif; ?>
-
-<section id="contact" class="container-fluid">
-	<div class="col-sm-12 call-to-action">
-
-		<h3 class="subheading invert" style="text-transform: uppercase; margin-bottom: 1em;" id="last-show-hook">
-			<?php the_field('call_to_action_hook'); ?>
-		</h3>
-		<?php if( get_field('call_to_action_link') && get_field('call_to_action_link') != 'null' ) : ?>
-		<a href="<?php the_field('call_to_action_link'); ?>" class="btn cta-btn" id="last-show-btn"><?php the_field('call_to_action_text'); ?></a>
-		<?php endif; ?>			
-	</div>
-
-</section>
-
-<a id="top-link"><i class="fa fa-chevron-circle-up fa-3x"></i></a>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- About Section -->
+    <section class="success" id="how">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 text-center">
+                    <h2>Join AIESEC</h2>
+                    <br><br>
+                </div>
+
+                <div class="col-sm-4 text-center">
+                    <i class="fa fa-jsfiddle fa-5x"></i>
+                    <h3>Intern abroad!</h3>
+                    <p>All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
+                    <a href="#" class="btn btn-lg btn-outline">
+                        Global Talent
+                    </a>
+                </div><!--col-->
+
+                <div class="col-sm-4 text-center">
+                    <i class="fa fa-rebel fa-5x"></i>
+                    <h3>Volunteer for a cause!</h3>
+                    <p>Hey AIESEC! All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
+                    <a href="#" class="btn btn-lg btn-outline">
+                        Global Citizen
+                    </a>
+                </div><!--col-->
+
+                <div class="col-sm-4 text-center">
+                    <i class="fa fa-university fa-5x"></i>
+                    <h3>Get involved here!</h3>
+                    <p>Hey AIESEC! All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
+                    <a href="#" class="btn btn-lg btn-outline">
+                       Global Leader
+                    </a>
+                </div><!--col-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Grid Section -->
+    <section id="partner" class="warning">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 text-center heading">
+                    <h2>Partner with Us</h2>
+                    <span class="subheading">
+                    </span>
+                    
+                </div>
+
+                <div class="col-sm-7 text-center">
+    
+                    <h3>Youth Org</h3>
+                    <p>Hey AIESEC! All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
+                </div><!--col-->
+
+                <div class="col-sm-5 text-center">
+                    <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                </div><!--col-->
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--Quote-->
+    <section id="quote"  style="background: url('img/stepgrass.jpg') center center; color: #fff">
+        <div class="container">
+            <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2> <em>"What doesn't kill you makes you stronger"</em></h2>
+            </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 text-center">
+                    <h2>Are you Ready?</h2>
+                    <hr class="star-primary">
+                </div>
+
+                 <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a id="contact-aiesec" class="btn btn-lg btn-outline-invert">
+                        Contact AIESEC
+                    </a>
+                </div>
+
+                <div class="col-sm-12 text-center">
+                (Map here)
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<script type="text/javascript">
+	$(function() {
+    $('#header-cta').click(function(e) {
+        $(window).scrollTo("section#about", 800, {offset:-80});  
+        e.preventDefault();
+    });
+
+    $('#contact-aiesec').click(function(e) {
+        $(window).scrollTo("footer", 800, {offset:-80}); 
+        e.preventDefault();
+    });
+
+    $('#scroll-down').click(function(e) {
+        $(window).scrollTo("footer", 800, {offset:-80});
+        e.preventDefault(); 
+
+    });
+
+}); 
+
+</script>
 <?php get_footer(); ?>

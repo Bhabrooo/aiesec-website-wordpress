@@ -4,9 +4,14 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
+// $ for page scrolling feature - requires $ Easing plugin
+jQuery(document).ready(function(){
+
+    $('[data-autoheight="true"]').css('height', $(window).height());
+});
+
 $(function() {
-    $('.scroll-top a').bind('click', function(event) {
+    $('#header-cta').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
@@ -14,9 +19,11 @@ $(function() {
         event.preventDefault();
     });
 
+    console.log("wassup");
 
     
 });
+
 
 // Floating label headings for the contact form
 $(function() {
@@ -29,25 +36,13 @@ $(function() {
     });
 });
 
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
+    // // Highlight the top nav as scrolling occurs
+    // $('body').scrollspy({
+    //     target: '.navbar-fixed-top'
+    // })
 
 
-$('[data-autoheight="true"]').css('height', $(window).height());
 
-$('#header-cta').click(function() {
-    $(window).scrollTo("section#about", 800, {offset:-80});  
-});
 
-$('#contact-aiesec').click(function() {
-    $(window).scrollTo("footer", 800, {offset:-80});  
 
-});
-
-$('#scroll-down').click(function() {
-    $(window).scrollTo("footer", 800, {offset:-80});  
-
-});
 

@@ -1,7 +1,7 @@
-Xolve Wordpress Base Theme
+Foxtart Wordpress Base Theme
 ===
 
-This is the core Wordpress theme for Xolve Inc, it is based on the underscores theme (underscores.me), and includes the following features:
+This is the core Wordpress theme for Foxtart, it is based on the underscores theme (underscores.me), and includes the following features:
 
 * A just right amount of lean, well-commented, modern, HTML5 templates.
 * A helpful 404 template.

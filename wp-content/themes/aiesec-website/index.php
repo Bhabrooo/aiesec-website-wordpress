@@ -4,7 +4,7 @@
  *
  * See http://codex.wordpress.org/Template_Hierarchy for more details
  *
- * @package Xolve Base Theme
+ * @package Foxtart Base Theme
  */
 
 get_header(); ?>

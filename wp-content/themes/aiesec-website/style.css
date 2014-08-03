@@ -222,7 +222,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    /*background: #18bc9c;*/
+    background: #18bc9c;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -324,15 +324,21 @@ header .intro-text .skills {
 section {
     padding: 100px 0;
     min-height: 180px;
-    -webkit-background-size: cover;
+
+/*    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
-   background-size: cover;
+   background-size: cover;*/
 }
 
 section h2 {
     margin: 0;
     font-size: 3em;
+
+}
+
+section.gray{
+        background-color: #ddd;
 }
 
 section.success {

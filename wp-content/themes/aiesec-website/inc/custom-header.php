@@ -12,39 +12,39 @@
 	<?php endif; // End header image check. ?>
 
  *
- * @package Xolve Base Theme
+ * @package Foxtart Base Theme
  */
 
 /**
  * Setup the WordPress core custom header feature.
  *
- * @uses xolve_base_theme_header_style()
- * @uses xolve_base_theme_admin_header_style()
- * @uses xolve_base_theme_admin_header_image()
+ * @uses foxtart_base_theme_header_style()
+ * @uses foxtart_base_theme_admin_header_style()
+ * @uses foxtart_base_theme_admin_header_image()
  *
- * @package Xolve Base Theme
+ * @package foxtart Base Theme
  */
-function xolve_base_theme_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'xolve_base_theme_custom_header_args', array(
+function foxtart_base_theme_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'foxtart_base_theme_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'xolve_base_theme_header_style',
-		'admin-head-callback'    => 'xolve_base_theme_admin_header_style',
-		'admin-preview-callback' => 'xolve_base_theme_admin_header_image',
+		'wp-head-callback'       => 'foxtart_base_theme_header_style',
+		'admin-head-callback'    => 'foxtart_base_theme_admin_header_style',
+		'admin-preview-callback' => 'foxtart_base_theme_admin_header_image',
 	) ) );
 }
-add_action( 'after_setup_theme', 'xolve_base_theme_custom_header_setup' );
+add_action( 'after_setup_theme', 'foxtart_base_theme_custom_header_setup' );
 
-if ( ! function_exists( 'xolve_base_theme_header_style' ) ) :
+if ( ! function_exists( 'foxtart_base_theme_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see xolve_base_theme_custom_header_setup().
+ * @see foxtart_base_theme_custom_header_setup().
  */
-function xolve_base_theme_header_style() {
+function foxtart_base_theme_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -77,15 +77,15 @@ function xolve_base_theme_header_style() {
 	</style>
 	<?php
 }
-endif; // xolve_base_theme_header_style
+endif; // foxtart_base_theme_header_style
 
-if ( ! function_exists( 'xolve_base_theme_admin_header_style' ) ) :
+if ( ! function_exists( 'foxtart_base_theme_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @see xolve_base_theme_custom_header_setup().
+ * @see foxtart_base_theme_custom_header_setup().
  */
-function xolve_base_theme_admin_header_style() {
+function foxtart_base_theme_admin_header_style() {
 ?>
 	<style type="text/css">
 		.appearance_page_custom-header #headimg {
@@ -105,18 +105,18 @@ function xolve_base_theme_admin_header_style() {
 	</style>
 <?php
 }
-endif; // xolve_base_theme_admin_header_style
+endif; // foxtart_base_theme_admin_header_style
 
-if ( ! function_exists( 'xolve_base_theme_admin_header_image' ) ) :
+if ( ! function_exists( 'foxtart_base_theme_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see xolve_base_theme_custom_header_setup().
+ * @see foxtart_base_theme_custom_header_setup().
  */
-function xolve_base_theme_admin_header_image() {
+function foxtart_base_theme_admin_header_image() {
 	$style = sprintf( ' style="color:#%s;"', get_header_textcolor() );
 ?>
-	<div id="headimg">
+	<div id="heading">
 		<h1 class="displaying-header-text"><a id="name"<?php echo $style; ?> onclick="return false;" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 		<div class="displaying-header-text" id="desc"<?php echo $style; ?>><?php bloginfo( 'description' ); ?></div>
 		<?php if ( get_header_image() ) : ?>
@@ -125,4 +125,4 @@ function xolve_base_theme_admin_header_image() {
 	</div>
 <?php
 }
-endif; // xolve_base_theme_admin_header_image
+endif; // foxtart_base_theme_admin_header_image
