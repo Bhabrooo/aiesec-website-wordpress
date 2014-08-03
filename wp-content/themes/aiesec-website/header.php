@@ -45,7 +45,11 @@
               	?>
               	
               	<a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img src="<?php the_field('header_logo', 'option'); ?>" class="index-img-header img-responsive"></a>
-          	
+          		
+          		<?php else: ?>
+
+          			<a class="navbar-brand" href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo('name');?> </a>
+
           		<?php endif; ?>
             </div>
 
