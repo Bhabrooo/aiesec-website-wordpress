@@ -56,17 +56,17 @@
         </div>
         <div class="footer-col col-md-5">
             <h3>Location</h3>
-            <p>Unit 104 Xavierville Ave, <br> Loyola Heights, Quezon City</p><br>
+           <p><?php the_field('location', 'option'); ?></p>
             <h3>Connect with Us</h3>
             <ul class="list-inline">
                 <li>
-                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                    <a href="<?php the_field('facebook', 'option'); ?>" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                 </li>
                 <li>
-                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                    <a href="<?php the_field('twitter', 'option'); ?>" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                 </li>
                 <li>
-                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                    <a href="<?php the_field('linkedin', 'option'); ?>" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                 </li>
             </ul>
         </div>
