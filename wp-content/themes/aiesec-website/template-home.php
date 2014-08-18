@@ -52,7 +52,7 @@ get_header(); ?>
     </section>
 <?php endif; ?>
 
-    <!-- About Section -->
+<?php if( have_rows('programmes') ): ?>
     <section class="success" id="how">
         <div class="container">
             <div class="row">
@@ -62,36 +62,23 @@ get_header(); ?>
                     <br><br>
                 </div>
 
+            <?php while ( have_rows('programmes') ) : the_row(); ?>
                 <div class="col-sm-4 text-center">
                     <i class="fa fa-jsfiddle fa-5x"></i>
-                    <h3>Intern abroad!</h3>
-                    <p>All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
+                    <h3><?php the_sub_field('prog_title'); ?></h3>
+                    <p><?php the_sub_field('prog_details'); ?></p>
                     <a href="#" class="btn btn-lg btn-outline">
-                        Global Talent
+                        <?php the_sub_field('prog_button_title'); ?>
                     </a>
                 </div><!--col-->
+            <?php endwhile; ?>
 
-                <div class="col-sm-4 text-center">
-                    <i class="fa fa-rebel fa-5x"></i>
-                    <h3>Volunteer for a cause!</h3>
-                    <p>Hey AIESEC! All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
-                    <a href="#" class="btn btn-lg btn-outline">
-                        Global Citizen
-                    </a>
-                </div><!--col-->
 
-                <div class="col-sm-4 text-center">
-                    <i class="fa fa-university fa-5x"></i>
-                    <h3>Get involved here!</h3>
-                    <p>Hey AIESEC! All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
-                    <a href="#" class="btn btn-lg btn-outline">
-                       Global Leader
-                    </a>
-                </div><!--col-->
+
             </div>
         </div>
     </section>
-
+<?php endif; ?>
     <!-- Student Grid Section -->
     <section id="partner" class="warning">
         <div class="container">
