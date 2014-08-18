@@ -26,43 +26,31 @@ get_header(); ?>
     </header>
 
 
-
-    <!-- Student Grid Section -->
+<?php if( have_rows('description') ): ?>
     <section id="about" class="yellow">
         <div class="container">
             <div class="row">
 
                 <div class="col-sm-12 text-center heading">
-                    <h2>Who we are</h2>
+                    <h2><?php the_field('who_we_are_text'); ?></h2>
                     <span class="subheading">
-                       <a href="about.html" class="sub-button">Get to Know More About Us</a> 
+                       <a href="about.html" class="sub-button"><?php the_field('wwa_subheading'); ?></a> 
                     </span>
                     
                 </div>
 
+                <?php while ( have_rows('description') ) : the_row(); ?>
                 <div class="col-sm-4 text-center">
                     <i class="fa fa-jsfiddle fa-5x"></i>
-                    <h3>Youth Org</h3>
-                    <p>Hey AIESEC! All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
+                    <h3><?php the_sub_field('wwa_title'); ?></h3>
+                    <p><?php the_sub_field('wwa_details'); ?></p>
                 </div><!--col-->
-
-                <div class="col-sm-4 text-center">
-                    <i class="fa fa-rebel fa-5x"></i>
-                    <h3>Filipino</h3>
-                    <p>Hey AIESEC! All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
-                </div><!--col-->
-
-                <div class="col-sm-4 text-center">
-                    <i class="fa fa-university fa-5x"></i>
-                    <h3>First-choice Partner</h3>
-                    <p>Hey AIESEC! All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
-
-                </div><!--col-->
+                <?php endwhile; ?>
 
             </div>
         </div>
     </section>
-
+<?php endif; ?>
 
     <!-- About Section -->
     <section class="success" id="how">
