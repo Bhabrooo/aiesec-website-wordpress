@@ -9,16 +9,15 @@ get_header(); ?>
  
 
     <!-- Header -->
-    <header data-autoheight="true">
-    <!--style="background: url('img/forest.jpg') center center"-->
+    <header data-autoheight="true" style="background: url(<?php the_field('welcome_background_image'); ?>) center center">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="intro-text">
-                        <span class="name">Mabuhay!</span>
-                        <span class="skills">We are the Philippine branch of AIESEC, the world's biggest youth organization</span><br>
+                        <span class="name"><?php the_field('welcome-text'); ?></span>
+                        <span class="skills"><?php the_field('welcome_subheading'); ?></span><br>
                         <button class="btn btn-lg btn-outline" id="header-cta">
-                            Learn More
+                            <?php the_field('welcome_learn_more'); ?>
                         </button>
                     </div>
                 </div>
