@@ -93,12 +93,12 @@ get_header(); ?>
 
                 <div class="col-sm-7 text-center">
     
-                    <h3>Youth Org</h3>
-                    <p>Hey AIESEC! All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
+                    <h3><?php the_field('pwu_tagline'); ?></h3>
+                    <p><?php the_field('pwu_description'); ?></p>
                 </div><!--col-->
 
                 <div class="col-sm-5 text-center">
-                    <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                    <img src="<?php the_field('pwu_image'); ?>" class="img-responsive" alt="">
                 </div><!--col-->
 
 
@@ -107,11 +107,11 @@ get_header(); ?>
     </section>
 
     <!--Quote-->
-    <section id="quote"  style="background: url('img/stepgrass.jpg') center center; color: #fff">
+    <section id="quote"  style="background: url('<?php the_field('quote_background_image'); ?>') center center; color: #fff">
         <div class="container">
             <div class="row">
             <div class="col-sm-12 text-center">
-                <h2> <em>"What doesn't kill you makes you stronger"</em></h2>
+                <h2> <em>"<?php the_field('aiesec_quote'); ?>"</em></h2>
             </div>
                 
             </div>
