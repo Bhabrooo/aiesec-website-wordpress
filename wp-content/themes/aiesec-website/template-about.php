@@ -18,6 +18,12 @@ get_header(); ?>
                         <button class="btn btn-lg btn-outline" id="header-cta">
                             <?php the_field('about_button_title'); ?>
                         </button>
+                         <button class="btn btn-lg btn-outline" id="header-cta">
+                            <?php the_field('about_button_title_2'); ?>
+                        </button>
+                        <button class="btn btn-lg btn-outline" id="header-cta">
+                            <?php the_field('about_button_title_3'); ?>
+                        </button>                         
                     </div>
                 </div>
             </div>
@@ -32,18 +38,19 @@ get_header(); ?>
                 <div class="col-sm-12 text-center heading">
                     <h2>About AIESEC</h2>
                     <span class="subheading">
+
                     </span>
                     
                 </div>
 
                 <div class="col-sm-7 text-center">
     
-                    <h3>Youth Org</h3>
-                    <p>Hey AIESEC! All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
+                    <h3><?php the_field('about_aiesec_tagline'); ?></h3>
+                    <p><?php the_field('about_aiesec_description'); ?></p>
                 </div><!--col-->
 
                 <div class="col-sm-5 text-center">
-                    <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                    <img src="<?php the_field('about_aiesec_image'); ?>" class="img-responsive" alt="">
                 </div><!--col-->
 
 
@@ -51,7 +58,34 @@ get_header(); ?>
         </div>
     </section>
 
-    <!-- About Section -->
+    <section class="success">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 text-center">
+                    <h2>AIESEC History</h2>
+                    <br><br>
+                </div>
+
+                <div class="col-sm-5 text-center">
+                    <img src="<?php the_field('aiesec_history_image'); ?>" class="img-responsive" alt="">
+                </div><!--col-->
+                
+                <div class="col-sm-7 text-center">
+    
+                    <h3><?php the_field('aiesec_history_tagline'); ?></h3>
+                    <p><?php the_field('aiesec_history_description'); ?></p>
+                </div><!--col-->
+
+
+
+
+                </div><!--col-->
+            </div>
+        </div>
+    </section>
+
+
     <section class="warning">
         <div class="container">
             <div class="row">
@@ -61,14 +95,16 @@ get_header(); ?>
                     <br><br>
                 </div>
 
-                <div class="col-sm-5 text-center">
-                    <img src="img/portfolio/circus.png" class="img-responsive" alt="">
-                </div><!--col-->
+
 
                 <div class="col-sm-7 text-center">
     
-                    <h3>Youth Org</h3>
-                    <p>Hey AIESEC! All AIESECers from Asia Pacific are invited to register for APXLDS: the biggest and funnest conference in the region</p>
+                    <h3><?php the_field('aiesec_phes_tagline'); ?></h3>
+                    <p><?php the_field('aiesec_phes_description'); ?></p>
+                </div><!--col-->
+
+                <div class="col-sm-5 text-center">
+                    <img src="<?php the_field('aiesec_phes_image'); ?>" class="img-responsive" alt="">
                 </div><!--col-->
 
 

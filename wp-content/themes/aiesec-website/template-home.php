@@ -79,7 +79,7 @@ get_header(); ?>
         </div>
     </section>
 <?php endif; ?>
-    <!-- Student Grid Section -->
+    
     <section id="partner" class="warning">
         <div class="container">
             <div class="row">
