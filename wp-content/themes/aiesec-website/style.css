@@ -321,9 +321,13 @@ header .intro-text .skills {
     border: 0;
 }
 
+header{
+    background-color: #ddd;
+}
 section {
     padding: 100px 0;
     min-height: 180px;
+    background-color: #ddd;
 
 /*    -webkit-background-size: cover;
    -moz-background-size: cover;

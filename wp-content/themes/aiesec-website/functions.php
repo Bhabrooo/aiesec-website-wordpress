@@ -150,7 +150,7 @@ require get_template_directory() . '/inc/jetpack.php';
 function my_acf_options_page_settings( $settings )
 {
 	$settings['title'] = 'Global';
-	$settings['pages'] = array('Header');
+	$settings['pages'] = array('Header', 'Footer');
  
 	return $settings;
 }
