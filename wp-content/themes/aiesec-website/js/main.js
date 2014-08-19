@@ -5,13 +5,9 @@
  */
 
 // $ for page scrolling feature - requires $ Easing plugin
-jQuery(document).ready(function(){
-
-    $('[data-autoheight="true"]').css('height', $(window).height());
-});
 
 $(function() {
-    $('#header-cta').bind('click', function(event) {
+    $('.scroll-top a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
@@ -19,9 +15,6 @@ $(function() {
         event.preventDefault();
     });
 
-    console.log("wassup");
-
-    
 });
 
 
@@ -36,10 +29,27 @@ $(function() {
     });
 });
 
-    // // Highlight the top nav as scrolling occurs
-    // $('body').scrollspy({
-    //     target: '.navbar-fixed-top'
-    // })
+$('[data-autoheight="true"]').css('height', $(window).height());
+
+
+$(function(){
+    $('#header-cta').click(function() {
+        $(window).scrollTo("section#about", 800, {offset:-80});  
+    });
+
+    $('#contact-aiesec').click(function() {
+        $(window).scrollTo("footer", 800, {offset:-80});  
+    });
+
+    $('#scroll-down').click(function() {
+        $(window).scrollTo("footer", 800, {offset:-80});  
+    });
+
+});
+
+
+//jQuery to collapse the navbar on scroll
+
 
 
 

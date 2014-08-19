@@ -88,34 +88,35 @@ function foxtart_base_theme_scripts() {
 	}
 
 	// Load jQuery
-	wp_enqueue_script( 'foxtart-jquery', get_template_directory_uri() . '/js/jquery-1.11.0.js', array(), '1.11.0' );
-	wp_enqueue_script( 'foxtart-jquery-easing', '//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', array(), '1.3' );
-	wp_enqueue_script( 'foxtart-jquery-ui', '//code.jquery.com/ui/1.9.2/jquery-ui.min.js', array(), '1.9.2' );
+	wp_enqueue_script( 'foxtart-jquery', get_template_directory_uri() . '/js/jquery-1.11.0.js', array(), '1.11.0', true );
+	wp_enqueue_script( 'foxtart-jquery-easing', '//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', array(), '1.3', true );
+	wp_enqueue_script( 'foxtart-jquery-ui', '//code.jquery.com/ui/1.9.2/jquery-ui.min.js', array(), '1.9.2', true );
 	wp_enqueue_script( 'foxtart-response', '//airve.github.io/js/response/response.min.js', array('jquery'), false, true);
-	wp_enqueue_script( 'foxtart-scrollTo-js', get_template_directory_uri() . '/js/jquery.scrollTo.min.js', array(), '1.4.13' );
+	wp_enqueue_script( 'foxtart-scrollTo-js', get_template_directory_uri() . '/js/jquery.scrollTo.min.js', array(), '1.4.13', true );
 
 	// Load bootstrap stylesheet and javascript
-	wp_enqueue_style( 'foxtart-bootstrap-css', '//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css', array(), '3.1' );
-	wp_enqueue_script( 'foxtart-bootstrap-js', '//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js', array(), '3.1' );
+	wp_enqueue_style( 'foxtart-bootstrap-css', '//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', array(), '3.1.1' );
+	wp_enqueue_script( 'foxtart-bootstrap-js', '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js', array(), '3.1.1', true );
 	wp_enqueue_style( 'foxtart-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', array(), '4.1.0' );
-	wp_enqueue_script( 'foxtart-bootstrap-validation', get_template_directory_uri() . '/js/jqBootstrapValidation.js', array(), '1.4.11' );
+	wp_enqueue_script( 'foxtart-bootstrap-validation', get_template_directory_uri() . '/js/jqBootstrapValidation.js', array(), '1.4.11', true );
 
 	//Other Theme bases
-	wp_enqueue_script( 'foxtart-classie', get_template_directory_uri() . '/js/classie.js', array(), '1.0' );
-	wp_enqueue_script( 'foxtart-animated-header', get_template_directory_uri() . '/js/cbpAnimatedHeader.js', array(), '1.0' );
+	wp_enqueue_script( 'foxtart-classie', get_template_directory_uri() . '/js/classie.js', array(), '1.0', true );
+	wp_enqueue_script( 'foxtart-customizer', get_template_directory_uri() . '/js/customizer.js', array(), '1.0', true );
+	wp_enqueue_script( 'foxtart-animated-header', get_template_directory_uri() . '/js/cbpAnimatedHeader.js', array(), '1.0' , true);
 	wp_enqueue_script( 'foxtart-animated-header-min', get_template_directory_uri() . '/js/cbpAnimatedHeader.min.js', array(), '1.0' );
 	
 	wp_enqueue_style( 'foxtart-normalize-style', '//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css' );
-	wp_enqueue_script( 'foxtart-modernizr-js', '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js', array(), '2.7.1' );
+	wp_enqueue_script( 'foxtart-modernizr-js', '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js', array(), '2.7.1' , true);
 
 	// Dynamic Webfont Loader
-	wp_enqueue_script( 'foxtart-gwebfontloader-js', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js', array(), '1.4.7' );
-	wp_enqueue_script( 'foxtart-jwebfont-js', get_template_directory_uri() . '/js/jquery.jwebfont.js', array(), '1.0' );
+	wp_enqueue_script( 'foxtart-gwebfontloader-js', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js', array(), '1.4.7', true);
+	wp_enqueue_script( 'foxtart-jwebfont-js', get_template_directory_uri() . '/js/jquery.jwebfont.js', array(), '1.0', true );
 
 	wp_enqueue_style( 'foxtart-base-theme-style', get_stylesheet_uri() );
 
 	// Custom JS Files
-	wp_enqueue_script( 'foxtart-main-js', get_template_directory_uri() . '/js/main.js', array(), '1.0' );
+	wp_enqueue_script( 'foxtart-main-js', get_template_directory_uri() . '/js/main.js', array(), '1.0', true );
 
 
 }

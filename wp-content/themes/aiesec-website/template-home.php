@@ -17,7 +17,7 @@ get_header(); ?>
                         <span class="name"><?php the_field('welcome-text'); ?></span>
                         <span class="skills"><?php the_field('welcome_subheading'); ?></span><br>
                         <button class="btn btn-lg btn-outline" id="header-cta">
-                            <?php the_field('welcome_learn_more'); ?>
+                          <?php the_field('welcome_learn_more'); ?>
                         </button>
                     </div>
                 </div>
