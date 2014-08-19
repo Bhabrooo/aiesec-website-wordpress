@@ -34,7 +34,7 @@ get_header(); ?>
                 <div class="col-sm-12 text-center heading">
                     <h2><?php the_field('who_we_are_text'); ?></h2>
                     <span class="subheading">
-                       <a href="about.html" class="sub-button"><?php the_field('wwa_subheading'); ?></a> 
+                       <a href="about" class="sub-button"><?php the_field('wwa_subheading'); ?></a> 
                     </span>
                     
                 </div>
@@ -86,7 +86,8 @@ get_header(); ?>
 
                 <div class="col-sm-12 text-center heading">
                     <h2>Partner with Us</h2>
-                    <span class="subheading">
+                    <span class="subheading-invert">
+                    <a href="partner-with-us" class="sub-button">Why AIESEC is the best Partner</a> 
                     </span>
                     
                 </div>
@@ -125,7 +126,6 @@ get_header(); ?>
 
                 <div class="col-sm-12 text-center">
                     <h2>Are you Ready?</h2>
-                    <hr class="star-primary">
                 </div>
 
                  <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -134,33 +134,21 @@ get_header(); ?>
                     </a>
                 </div>
 
-                <div class="col-sm-12 text-center">
-                (Map here)
-                </div>
-
             </div>
         </div>
     </section>
 
-<script type="text/javascript">
-	$(function() {
-    $('#header-cta').click(function(e) {
-        $(window).scrollTo("section#about", 800, {offset:-80});  
-        e.preventDefault();
-    });
-
-    $('#contact-aiesec').click(function(e) {
-        $(window).scrollTo("footer", 800, {offset:-80}); 
-        e.preventDefault();
-    });
-
-    $('#scroll-down').click(function(e) {
-        $(window).scrollTo("footer", 800, {offset:-80});
-        e.preventDefault(); 
-
-    });
-
-}); 
-
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
+    
 </script>
+<section id="map">
+<div class="row-fluid">
+    <div style="overflow:hidden;height:500px;width:100%;">
+    <div id="gmap_canvas" style="height:100%;width:100%; vertical-align:middle;">
+        
+    </div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+    <a class="google-map-code" href="http://www.sparmichl.de" id="get-map-data">www.sparmichl.de</a></div>
+    <script type="text/javascript"> function init_map(){var myOptions = {zoom:18,center:new google.maps.LatLng(14.646696275794682,121.07398918584443),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(14.646696275794682, 121.07398918584443)});infowindow = new google.maps.InfoWindow({content:"<b>Unit 524, Elizabeth Hall</b><br/>Katipunan Avenue, Loyola Heights, Quezon City<br/> Quezon City" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+</div>  
+</section>
 <?php get_footer(); ?>

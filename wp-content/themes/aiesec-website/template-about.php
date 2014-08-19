@@ -18,12 +18,7 @@ get_header(); ?>
                         <button class="btn btn-lg btn-outline" id="header-cta">
                             <?php the_field('about_button_title'); ?>
                         </button>
-                         <button class="btn btn-lg btn-outline" id="header-cta">
-                            <?php the_field('about_button_title_2'); ?>
-                        </button>
-                        <button class="btn btn-lg btn-outline" id="header-cta">
-                            <?php the_field('about_button_title_3'); ?>
-                        </button>                         
+                                                
                     </div>
                 </div>
             </div>
