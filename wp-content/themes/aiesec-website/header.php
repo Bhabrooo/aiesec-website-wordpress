@@ -62,8 +62,8 @@
 						'link_before'     => '',
 						'link_after'      => '',
 						'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-						'depth'           => 0,
-						'walker'          => ''
+						'depth'           => 2,
+						'walker'          => new wp_bootstrap_navwalker()
 					);
 
 				wp_nav_menu( $defaults ); 
