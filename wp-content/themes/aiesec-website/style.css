@@ -377,7 +377,21 @@ header .intro-text .skills {
 
 .dropdown-menu > li > a{
     color: #fff;
+}
 
+.dropdown-menu > li > a:hover{
+    background-color: rgba(31, 200,211,0.8);
+}
+
+
+
+.dropdown-menu>.active>a, 
+.dropdown-menu>.active>a:hover, 
+.dropdown-menu>.active>a:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    background-color: #18bc9c;
 }
 
 header{
