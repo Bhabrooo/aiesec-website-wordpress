@@ -86,13 +86,13 @@
 
 
 <div class="scroll-top page-scroll">
-<a class="btn btn-primary" href="#page-top">
+<a class="btn btn-primary">
 <i class="fa fa-chevron-up"></i>
 </a>
 </div>
 
 <div class="scroll-down page-scroll" id="scroll-down">
-<a class="btn btn-primary" href="#contact">
+<a class="btn btn-primary">
 <i class="fa fa-phone"></i>
 </a>
 </div>

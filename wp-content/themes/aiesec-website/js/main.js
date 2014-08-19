@@ -34,15 +34,15 @@ $('[data-autoheight="true"]').css('height', $(window).height());
 
 $(function(){
     $('#header-cta').click(function() {
-        $(window).scrollTo("section#about", 800, {offset:-80});  
+        $(window).scrollTo("section#about", 800, {offset:-60});  
     });
 
     $('#contact-aiesec').click(function() {
-        $(window).scrollTo("footer", 800, {offset:-80});  
+        $(window).scrollTo("footer", 800, {offset:-60});  
     });
 
     $('#scroll-down').click(function() {
-        $(window).scrollTo("footer", 800, {offset:-80});  
+        $(window).scrollTo("footer", 800, {offset:-60});  
     });
 
 });
