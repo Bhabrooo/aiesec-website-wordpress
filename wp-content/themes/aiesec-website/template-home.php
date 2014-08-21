@@ -9,16 +9,19 @@ get_header(); ?>
  
 
     <!-- Header -->
-    <header data-autoheight="true" style="background: url(<?php the_field('welcome_background_image'); ?>) center center">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="intro-text">
-                        <span class="name"><?php the_field('welcome-text'); ?></span>
-                        <span class="skills"><?php the_field('welcome_subheading'); ?></span><br>
-                        <button class="btn btn-lg btn-outline" id="header-cta">
-                          <?php the_field('welcome_learn_more'); ?>
-                        </button>
+    <header id="intro" data-autoheight="true" >
+        <div style="background: url(<?php the_field('welcome_background_image'); ?>)" data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -100px;" data-anchor-target="#intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="intro-text">
+                            <span class="name"><?php the_field('welcome-text'); ?></span>
+                            <span class="skills"><?php the_field('welcome_subheading'); ?></span><br>
+                            <button class="btn btn-lg btn-outline" id="header-cta">
+                              <?php the_field('welcome_learn_more'); ?>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

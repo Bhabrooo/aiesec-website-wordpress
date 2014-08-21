@@ -230,6 +230,18 @@ header {
 
 }
 
+header, section{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+header > div {
+    height: 100%;
+}
+
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
