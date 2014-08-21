@@ -7,22 +7,25 @@
 
 get_header(); ?>
 
-    <!-- Header -->
-    <header data-autoheight="true" style="background: url(<?php the_field('about_background_image'); ?>) center center">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="intro-text">
-                        <span class="name"><?php the_field('about_text'); ?></span>
-                        <span class="skills"><?php the_field('about_subheading'); ?></span><br>
-                        <button class="btn btn-lg btn-outline" id="header-cta">
-                            <?php the_field('about_button_title'); ?>
-                        </button>
-                                                
+ <!-- Header -->
+<header id="intro" data-autoheight="true">
+    <div class="bg" style="background: url(<?php the_field('about_background_image'); ?>) no-repeat fixed 50% 0px / cover" data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -100px;" data-anchor-target="#intro">  
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="intro-text">
+                            <span class="name"><?php the_field('about_text'); ?></span>
+                            <span class="skills"><?php the_field('about_subheading'); ?></span><br>
+                            <button class="btn btn-lg btn-outline" id="header-cta">
+                                <?php the_field('about_button_title'); ?>
+                            </button>
+                                                    
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     </header>
 
 

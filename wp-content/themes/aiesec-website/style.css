@@ -223,22 +223,21 @@ header {
     text-align: center;
     color: #fff;
     background: #18bc9c;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
 
 }
 
 header, section{
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
 
-header > div {
+header > .bg,
+section > .bg {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     height: 100%;
 }
 
@@ -287,6 +286,11 @@ header .intro-text .skills {
 }
 
 @media(min-width:768px) {
+
+    header, section{
+        /*min-height: 400px;*/
+    }
+
     .navbar-fixed-top {
         padding: 25px 0;
         -webkit-transition: padding .3s;
@@ -449,6 +453,11 @@ section.yellow{
     background: #C4C15F;
 }
 
+section#quote{
+    margin: 0;
+    padding: 0;
+}
+
 section#contact{
     margin-bottom: 0;
     padding: 4em 0;
@@ -459,7 +468,15 @@ section#map{
 }
 
 
+@media(min-width: 767px){
+    section#quote{
+        height: 200px;
+    }
 
+    section#quote > .bg{
+        padding: 5em 0;
+    }
+}
 
 
 @media(max-width:767px) {
@@ -470,6 +487,17 @@ section#map{
     section.first {
         padding-top: 75px;
     }
+
+    section#quote{
+        height: 150px;
+    }
+
+    section#quote > .bg{
+        padding: 3em 0;
+    }
+}
+
+
 }
 
 #portfolio .portfolio-item {

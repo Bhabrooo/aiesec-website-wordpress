@@ -29,10 +29,19 @@ $(function() {
     });
 });
 
-$('[data-autoheight="true"]').css('height', $(window).height());
+$(function(){
+
+    $('[data-autoheight="true"]').css('height', $(window).height());
+
+});
+
+
 
 
 $(function(){
+    
+
+
     $('#header-cta').click(function() {
         $(window).scrollTo("section", 800, {offset:-60});  
     });

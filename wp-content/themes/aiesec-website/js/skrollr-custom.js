@@ -9,17 +9,12 @@
  */
 
 ( function( $ ) {
-	
-	// Setup variables
-	$window = $(window);
-	$slide = $('section');
-	$body = $('body');
+
 	
     //FadeIn all sections   
 	$(document).ready( function() {
 		setTimeout(function() {
-		      
-		      // Resize sections
+		     
 		      adjustWindow();
 		      
 		  			  
@@ -33,24 +28,10 @@
 		//disable Skroller on  mobile
 	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
 		var s = skrollr.init({
-		}); }
+			forceHeight: false
+		}); 
+	}
 		
-		// Get window size
-	    winH = $window.height();
-	    
-	    // Keep minimum height 550
-	    if(winH <= 550) {
-			winH = 550;
-		}  else if (winH > 550){
-			winH = 768;
-		} else {
-			winH = 768;
-		}
-
-
-	    
-	    // Resize our slides
-	    $slide.height(winH);	  
 	    
 	}
 		

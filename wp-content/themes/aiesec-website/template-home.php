@@ -10,7 +10,7 @@ get_header(); ?>
 
     <!-- Header -->
     <header id="intro" data-autoheight="true" >
-        <div style="background: url(<?php the_field('welcome_background_image'); ?>)" data-center="background-position: 50% 0px;"
+        <div class="bg" style="background: url(<?php the_field('welcome_background_image'); ?>) no-repeat fixed 50% 0px / cover" data-center="background-position: 50% 0px;"
         data-top-bottom="background-position: 50% -100px;" data-anchor-target="#intro">
             <div class="container">
                 <div class="row">
@@ -111,13 +111,16 @@ get_header(); ?>
     </section>
 
     <!--Quote-->
-    <section id="quote"  style="background: url('<?php the_field('quote_background_image'); ?>') center center; color: #fff">
-        <div class="container">
-            <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2> <em>"<?php the_field('aiesec_quote'); ?>"</em></h2>
-            </div>
-                
+    <section id="quote" style="color: #fff">
+        <div class="bg" style="background: url(<?php the_field('quote_background_image'); ?>) no-repeat fixed 50% 0px / cover" data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -100px;" data-anchor-target="#quote">  
+            <div class="container">
+                <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2> <em>"<?php the_field('aiesec_quote'); ?>"</em></h2>
+                </div>
+                    
+                </div>
             </div>
         </div>
     </section>
