@@ -1,9 +1,9 @@
 # The Official Website of AIESEC Philippines
-__Created: July 2014__<br>
-__Author: Eyana Mallari__ (www.eyanamallari.com)
-==================
+_Creation Date: July 2014_<br>
+_Author: [Eyana Mallari](www.eyanamallari.com)_
 
-Main Features:
+
+####Main Features:
   1. Wordpress CMS with Advanced Custom Fields
   2. Smooth and parallax scrolling
   3. Youthful and hip design
@@ -13,7 +13,7 @@ Main Features:
     * ICX EPs - People who want to go on an exchange in the Philippines (GIP/GCDP)
     * Potential Partners
 
-Pages:
+####Pages:
   1. Home
   2. Who We Are (About) -  *consists of 3 sections*
     * About AIESEC
