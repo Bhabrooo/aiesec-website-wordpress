@@ -85,7 +85,7 @@
 </footer>
 
 
-<div class="scroll-top page-scroll">
+<div class="scroll-top page-scroll" id="top-link">
 <a class="btn btn-primary">
 <i class="fa fa-chevron-up"></i>
 </a>

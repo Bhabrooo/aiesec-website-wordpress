@@ -31,7 +31,7 @@ get_header(); ?>
 
 <?php if( have_rows('description') ): ?>
     <section id="about" class="yellow">
-        <div class="container">
+        <div class="container" data-0="opacity: 0"  data-center="opacity: 1" data-top-bottom="opacity: 0">
             <div class="row">
 
                 <div class="col-sm-12 text-center heading">

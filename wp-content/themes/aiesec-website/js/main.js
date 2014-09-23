@@ -42,6 +42,12 @@ $(function(){
     
 
 
+
+    $('#top-link').click(function(e) {
+        $(window).scrollTo(0, 1000);
+        e.preventDefault();
+    }); // top link
+
     $('#header-cta').click(function() {
         $(window).scrollTo("section", 800, {offset:-60});  
     });
