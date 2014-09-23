@@ -21,8 +21,22 @@
             </form>
         </div>
         <div class="footer-col col-md-5">
+
+            <h3>Find AIESEC nearest you!</h3>
+            <select class="form-control-invert" onchange="window.open(this.options[this.selectedIndex].value)">
+                <option value="">List of Local Chapters</option>
+                <option value="http://stackoverflow.com/">Ateneo de Manila University</option>
+                <option value="http://facebook.com/">Cebu</option>
+                <option value="http://facebook.com/">Davao</option>
+                <option value="http://facebook.com/">De La Salle University</option>
+                <option value="http://facebook.com/">Miriam College</option>
+                <option value="http://facebook.com/">University of Asia and the Pacific</option>
+                <option value="http://twitter.com/">University of the Philippines</option>
+                <option value="http://facebook.com/">University of Sto. Tomas</option>
+            </select>
+            <br>
             <h3>Location</h3>
-           <p><?php the_field('location', 'option'); ?></p>
+            <p><?php the_field('location', 'option'); ?></p><br>
             <h3>Connect with Us</h3>
             <ul class="list-inline">
                 <li>
@@ -35,6 +49,8 @@
                     <a href="<?php the_field('linkedin', 'option'); ?>" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                 </li>
             </ul>
+
+        
         </div>
     </div>
 </div>
